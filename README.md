@@ -1,27 +1,83 @@
-# FirstAngularProject
+:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
+👥 User Task Manager (Angular)
+This is a simple Angular project that allows you to manage tasks for multiple users. It displays a list of users, and when one is selected, their task list is shown. You can add tasks with a title, due date, and summary.
 
-## Development server
+🚀 Features
+List of users with avatars.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+View and manage tasks for a selected user.
 
-## Code scaffolding
+Add new tasks with a title, due date, and summary.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Responsive and modular component-based structure.
 
-## Build
+Conditional rendering using Angular directives.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+🧱 Built With
+Angular 15+
 
-## Running unit tests
+TypeScript
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+HTML & SCSS/CSS
 
-## Running end-to-end tests
+Angular Directives like *ngFor, *ngIf, [(ngModel)]
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Reusable Components:
 
-## Further help
+<app-user>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+<app-task>
+
+<app-tasks>
+
+<app-header>
+
+🗂️ Project Structure (Key Components)
+pgsql
+Copy
+Edit
+src/
+│
+├── app/
+│   ├── app.component.ts
+│   ├── app.component.html
+│   ├── components/
+│   │   ├── header/
+│   │   ├── user/
+│   │   ├── task/
+│   │   └── tasks/
+│
+├── assets/
+└── index.html
+🧪 How to Run Locally
+Clone the repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/user-task-manager.git
+cd user-task-manager
+Install dependencies:
+
+bash
+Copy
+Edit
+npm install
+Run the development server:
+
+bash
+Copy
+Edit
+ng serve
+Open in browser: Navigate to http://localhost:4200
+
+🧑‍💻 Usage
+The user list appears on the left side of the page.
+
+Click on a user to view their tasks.
+
+Add tasks using the input fields: Title, Due Date, and Summary.
+
+Tasks are displayed using <app-task> for each task.
+
